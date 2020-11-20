@@ -7,6 +7,7 @@ def Str_Chck(filen, string):
         if bool(matched):
             print (line+ " version is present")
             match = True
+    file.close()
     return match
 
 filen = sys.argv[1]
