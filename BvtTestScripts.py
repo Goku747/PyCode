@@ -15,7 +15,7 @@ print('\n')
 
 #Checking Artifact Version
 print("**********Checking Artifact Version**********")
-child.sendline('cat /etc/mender/artifact_info')
+child.sendline('cat /etc/folder/artifact_info')
 child.expect('\r\n')
 child.expect('root@app:~#')
 print child.before[:-2]
@@ -39,7 +39,7 @@ print('\n')
 
 #Checking LTE connectivity
 print("**********Checking LTE connectivity**********")
-child.sendline('ping 172.217.17.68')
+child.sendline('ping hostname')
 child.expect('\r\n')
 child.sendcontrol('c')
 child.expect('root@app:~#')
